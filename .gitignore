@@ -1,9 +1,8 @@
 drug-analysis-venv/
 drug-policy-data/
 policy-links-data/
-texas-results-v1/
-texas-results-v2/
+results-v1/
+results-v2/
 tacc-llm-analysis.py
 llm-results-analysis.ipynb
-llm-analysis-local.ipynb
 tasb-web-scraper.ipynb

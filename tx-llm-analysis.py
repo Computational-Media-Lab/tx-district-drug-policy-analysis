@@ -17,7 +17,7 @@ nltk.download('punkt')
 #   Data Configuration  #
 #-----------------------#
 
-PROJECT_DIR = "C:\\Users\\antho\\Computational-Media-Lab\\hs-district-drug-policy-analysis"
+PROJECT_DIR = "PROJECT_PATH"
 BASE_DIR = os.path.join(PROJECT_DIR, "drug-policy-data")
 OUTPUT_DIR = os.path.join(PROJECT_DIR, "district_analyses_results")
 os.makedirs(OUTPUT_DIR, exist_ok=True)
@@ -112,7 +112,7 @@ def extract_pdf_text(pdf_path):
         for page in reader.pages:
             page_text = page.extract_text()
             if page_text:
-                # 1. Fix Mojibake/Encoding errors (e.g., individualâ€™s -> individual's)
+                # Fix Mojibake/Encoding errors (e.g., individualâ€™s -> individual's)
                 try:
                     # Re-encode and decode back to clean UTF-8 strings
                     page_text = page_text.encode('cp1252').decode('utf-8')
@@ -120,7 +120,7 @@ def extract_pdf_text(pdf_path):
                     # Fallback to standard normalization if byte sequence doesn't match
                     page_text = unicodedata.normalize("NFKC", page_text)
 
-                # 2. Re-map specific common leftover corrupted characters
+                # Re-map specific common leftover corrupted characters
                 char_fixes = {
                     "â€”": "—", "â€?": "—", "â€™": "'", "â€œ": '"', "â€": '"', 
                     "â€?": '"', "ând": "and", "em- ployment": "employment",
@@ -129,7 +129,7 @@ def extract_pdf_text(pdf_path):
                 for bad, good in char_fixes.items():
                     page_text = page_text.replace(bad, good)
 
-                # 3. Clean page breaks/newlines without breaking words
+                # Clean page breaks/newlines without breaking words
                 cleaned_page_text = re.sub(r'(?<!\n)\n(?!\n)', ' ', page_text)
                 text_fragments.append(cleaned_page_text)
 
