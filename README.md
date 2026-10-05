@@ -43,7 +43,7 @@ Developed a custom web scraping algorithm to collect policy document PDFs from T
 3. On the contrast, districts with higher health term ratios tend to be located in rural and small suburban areas.
 
 ## Repository Information
-* llm-analysis.py: This code analyzes the policy PDFs testing different LLMs
+* tx-llm-analysis.py: This code analyzes the policy PDFs testing different LLMs
 * llm-results-analysis.py: Based on the results of the LLM analysis, this code calculates the quantitative index.
 * tasb-web-scraper.py: This is a custom web scraping algorithm using Selenium to scrape the TASB website to download the policy PDF data.
 
