@@ -38,7 +38,7 @@ Developed a custom web scraping algorithm to collect policy document PDFs from T
 * Mistral-Large-3-675B-Instruct-2512
 
 ## Key Findings
-1. Over two-thirds of all coded policy language on student substance use is heavily oriented toward disciplinary terminology rather than health-oriented interventions. The mean disciplinary term ratio overall was 68.9% compared to a mean health term ratio of 31.1%.
+1. Over two-thirds of all coded policy language on student substance use is heavily oriented toward disciplinary terminology rather than health-oriented interventions. The mean disciplinary term ratio overall was 64.2% compared to a mean health term ratio of 35.8%.
 2. Districts with higher disciplinary term ratios tend to be located in towns or midsize suburban areas.
 3. On the contrast, districts with higher health term ratios tend to be located in rural and small suburban areas.
 
